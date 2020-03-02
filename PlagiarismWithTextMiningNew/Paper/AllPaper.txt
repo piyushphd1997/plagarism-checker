@@ -1,0 +1,9 @@
+ABSTRACT 
+  
+      
+                            Data mining is an essential step in the process of knowledge discovery in databases.  
+ Reading and writing data 
+ Simple plotting 
+ Control flow 
+ Debugging 
+ Code profiling

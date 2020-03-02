@@ -1,0 +1,57 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="admin_AdminMasterPage" %>
+
+<!DOCTYPE HTML>
+<html>
+<head id="Head1" runat="server">
+<title>Plagiarism</title>
+<meta name="description" content="website description">
+<meta name="keywords" content=""><meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="../style/style.css" title="style">
+
+  <link href="../themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="../themes/1/js-image-slider.js" type="text/javascript"></script>
+
+    <link href="generic.css" rel="stylesheet" type="text/css" />
+    
+
+</head>
+<body>
+<form id="form1" runat="server">
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="#">Plagiarism With<span class="logo_colour">Text Mining</span></a></h1>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu"><!-- put class="selected" in the li tag for the selected page - to highlight which page you're on --><li class="selected"><a href="Default.aspx">Home</a></li>          
+          <li><a href="DoneUser.aspx">Done stud</a></li>
+          
+          <li><a href="NotDoneUser.aspx">Left Stud</a></li>
+          <li><a href="../Default.aspx">Logout</a></li>
+        </ul></div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>Admin Profile</h3>
+        
+        <p>
+            <asp:Image ID="Image1" runat="server" Width="100px" 
+                ImageUrl="~/web_img/admin.jpg" />
+        </p>
+        
+        <h4>
+            <asp:Label ID="lbluser" runat="server" Text="Admin"></asp:Label>
+          </h4>
+        </div>
+      <div id="content">
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+          </asp:ContentPlaceHolder>
+    </div>
+    
+  </div>
+  </form>
+</body></html>
